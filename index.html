@@ -11,31 +11,22 @@
   </head>
   <body>
     <div class="container">
-        <form>
-            <div class="base">
-              <h4>Age Calculator</h4>
-            </div>
-            <div class="block">
-                <p class="title">Date</p>
-                <input type="text" name=”date” id=”date” placeholder=”dd” required=”required” minlength=”1″ maxlength=”2″ />
-            </div>
-            <div class="block">
-                <p class="title">Month</p>
-              <input type=”text” name=”month” id=”month” placeholder=”mm” required=”required” minlength=”1″ maxlength=”2″ />
-            </div>
-            <div class=”block”>
-                <p class=”title”>Year</p>
-              <input type=”text” name=”year” id=”year” placeholder=”yyyy” required=”required” minlength=”4″ maxlength=”4″ />
-            </div>
-            <div class=”base”>
- 
-                <input type=”button” name=”submit” value=”Submit” onclick=”age()” />
-             
-              </div>
-          </form>
+       <h1>Age Calculator</h1>
+       <div class="data-container">
+        Date of Birth
+        <input type="date" name="birthdate" id="birthDate">
+       </div>
+       <div class="data-container">
+        Age at the Date of
+        <input type="date" name="currentdate" id="currentDate">
+       </div>
+       
+       <input type="button"  value="Calculate" name="Calculate" id="calculateBtn">
+       <p id="output"></p>
     </div>
    
     <!-- Optional JavaScript -->
+    <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
