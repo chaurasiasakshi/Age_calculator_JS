@@ -5,45 +5,36 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <div class="box">
-        <h3>Age Calcilator</h3>
-        <div class="datetime-picker">
-            <span>choose your birth date</span>
-            <input type="date" id="datePicker">
-            <span id="choseDate">May 14 ,2010</span>
-        </div>
-        <div class="age-calc">
-            <div class="age-box">
-                <p class="header">Years</p>
-                <p class="value">22</p>
+    <div class="container">
+        <form>
+            <div class="base">
+              <h4>Age Calculator</h4>
             </div>
-            <div class="age-box">
-                <p class="header">Months</p>
-                <p class="value">252</p>
+            <div class="block">
+                <p class="title">Date</p>
+                <input type="text" name=”date” id=”date” placeholder=”dd” required=”required” minlength=”1″ maxlength=”2″ />
             </div>
-            <div class="age-box">
-                <p class="header">Days</p>
-                <p class="value">365</p>
+            <div class="block">
+                <p class="title">Month</p>
+              <input type=”text” name=”month” id=”month” placeholder=”mm” required=”required” minlength=”1″ maxlength=”2″ />
             </div>
-            <div class="age-box">
-                <p class="header">Hours</p>
-                <p class="value">365</p>
+            <div class=”block”>
+                <p class=”title”>Year</p>
+              <input type=”text” name=”year” id=”year” placeholder=”yyyy” required=”required” minlength=”4″ maxlength=”4″ />
             </div>
-            <div class="age-box">
-                <p class="header">Seconds</p>
-                <p class="value">365</p>
-            </div>
-            <div class="age-box">
-                <p class="header">Milli Seconds</p>
-                <p class="value">365</p>
-            </div>
-        </div>
-      </div>
+            <div class=”base”>
+ 
+                <input type=”button” name=”submit” value=”Submit” onclick=”age()” />
+             
+              </div>
+          </form>
+    </div>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
